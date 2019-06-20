@@ -66,7 +66,7 @@ function EtherDex() {
     this.startEtherDex();
   });
 }
-BitDex.prototype.ejs = function ejs(url, element, data) {
+EtherDex.prototype.ejs = function ejs(url, element, data) {
   if ($(`#${element}`).length) {
     new EJS({ url }).update(element, data);
     this.translator.lang(this.language);
